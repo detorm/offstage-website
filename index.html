@@ -12,10 +12,10 @@
     />
     <script src="./scripts/swiper.js"></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/events.js" defer></script>
+    <!-- <script src="./scripts/events.js" defer></script>  -->
   </head>
   <body>
-    <div id="preloader">
+    <div id="preloader" >
       <img
         id="preloader-img"
         src="./aac-images/aac-slideshow/slide-loading.gif"
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Main content -->
-    <div id="content" style="display: none">
+    <div id="content" >
       <header>
         <div class="container">
           <div class="logo">
@@ -40,12 +40,7 @@
           </nav>
 
           <div class="join-us">
-            <button
-              class="join-btn"
-          
-            >
-              Join Us
-            </button>
+            <button class="join-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScPS7Ubxt98g5tqV_TWd-YAg0vILONqEUp-Ek1UltX23dU1Jg/viewform?usp=sharing&ouid=116143165373596338779','_blank')">Approach Us!</button>
           </div>
         </div>
       </header>
@@ -68,7 +63,7 @@
                 <button
                   class="btn-ghost"
                   onclick="
-                    window.open('https://www.instagram.com/nu__aac/', '_blank')
+                    window.open('https://www.instagram.com/offstage_team/', '_blank')
                   "
                 >
                   Learn More
@@ -106,7 +101,7 @@
                     providing the tools, expertise, and experience needed to
                     deliver high-quality, professional events.
                   </p>
-                  <p>
+                  <p id="below">
                     We work with any club that submits a request, offering
                     tailored support depending on their needs — from technical
                     assistance and event coordination to full media coverage.
@@ -314,42 +309,30 @@
         </section>
 
         <section class="upcoming-events" id="events">
-          <h1>Events</h1>
-          <div class="events-filter">
-            <label for="events-select">Show events:</label>
-            <select id="events-select">
-              <option value="upcoming" selected>Upcoming</option>
-              <option value="past">Past</option>
-              <option value="all">All</option>
-            </select>
-          </div>
+          <h1>OFFSTAGE VIDEO</h1>
           <div class="container">
-            <div class="events-section">
-              <div id="events-container" class="events-container">
-                <!-- Event cards rendered here -->
-              </div>
-            </div>
+            <video src="../aac-images/IMG_3889.MOV" controls id="promo-video"></video>
           </div>
         </section>
 
         <section class="partners">
           <div class="container">
             <div class="aac-partners">
-              <h2>Our trusted partners</h2>
+              <h2>Our valuable clients</h2>
               <div class="aac-partners-images">
-                <img src="./aac-images/aac-partners/kpmg.svg" alt="" />
-                <img id="pwc" src="./aac-images/aac-partners/pwc.svg" alt="" />
-                <img src="./aac-images/aac-partners/deloitte.svg" alt="" />
-                <img src="./aac-images/aac-partners/cci.svg" alt="" />
-                <img id="ey" src="./aac-images/aac-partners/ey.png" alt="" />
+                <img src="./aac-images/aac-partners/vocal-logo.jpg" alt="" />
+                <img src="./aac-images/aac-partners/cntmp-logo.jpg" alt="" />
+                <img src="./aac-images/aac-partners/business-logo.jpg" alt="" />
+                <img src="./aac-images/aac-partners/piano-logo.jpg" alt="" />
+                <img src="./aac-images/aac-partners/art-logo.jpg" alt="" />
                 <img
                   id="mckinsey"
-                  src="./aac-images/aac-partners/mckinsey.png"
+                  src="./aac-images/aac-partners/acm-logo.jpg"
                   alt=""
                 />
                 <img
                   id="processingkz"
-                  src="./aac-images/aac-partners/processingkz.png"
+                  src="./aac-images/aac-partners/red-logo.jpg"
                   alt=""
                 />
               </div>
@@ -367,15 +350,13 @@
                   <p>NU OFFSTAGE</p>
                 </div>
                 <div class="footer-desc">
-                  <p>
-                    Assisting clubs together with NU OFFSTAGE.
-                  </p>
+                  <p>Assisting clubs together with NU OFFSTAGE.</p>
                 </div>
               </div>
 
               <!-- Right side: contacts/socials -->
               <div class="footer-right">
-                <div class="footer-contact-item">
+                <!-- <div class="footer-contact-item">
                   <h4>Telegram</h4>
                   <a href="https://t.me/nu_offstage" target="_blank">
                     <img
@@ -383,7 +364,7 @@
                       alt="Telegram"
                     />
                   </a>
-                </div>
+                </div> -->
                 <div class="footer-contact-item">
                   <h4>Instagram</h4>
                   <a

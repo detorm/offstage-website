@@ -22,7 +22,7 @@ body {
 
 /* ---------- Site container / header ---------- */
 header {
-  background: rgba(255, 255, 255, 0.871);
+  background: rgb(0, 0, 0);
   /* background: transparent; */
   position: sticky;
   top: 0;
@@ -58,7 +58,7 @@ header {
 }
 .links a {
   text-decoration: none;
-  color: #0b1820;
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 8px 6px;
@@ -66,8 +66,8 @@ header {
   transition: color 0.12s, background 0.12s, transform 0.12s;
 }
 .links a:hover {
-  color: #0b66ff;
-  background: rgba(11, 102, 255, 0.06);
+  /* color: #0b66ff; */
+  background: rgb(49, 49, 49);
   transform: translateY(-1px);
 }
 
@@ -78,8 +78,8 @@ header {
   gap: 12px;
 }
 .join-btn {
-  background: linear-gradient(90deg, #0066ff 0%, #00c2ff 100%);
-  color: #fff;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  color: #000000;
   border: none;
   padding: 10px 16px;
   border-radius: 10px;
@@ -91,6 +91,7 @@ header {
 .join-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 28px rgba(3, 64, 255, 0.16);
+  background: rgb(248,213,19);
 }
 
 /* ---------- Hero / Main block ---------- */
@@ -151,9 +152,18 @@ header {
   border-radius: 10px;
   color: #07122a;
   font-weight: 600;
+  transition: transform 0.12s, box-shadow 0.12s, opacity 0.12s;
+  cursor: pointer;
 }
+
+.btn-ghost:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(3, 64, 255, 0.16);
+  background: rgb(248,213,19);
+}
+
 .btn-primary {
-  background: linear-gradient(90deg, #0066ff 0%, #00c2ff 100%);
+  background: linear-gradient(90deg, #000000 0%, #000000 100%);
   color: white;
   border: none;
   padding: 10px 18px;
@@ -326,6 +336,17 @@ header {
 
 /* ensure slider controls sit below the header */
 
+
+
+/* FUCK EVENTS GET PROMO VIDEO*/
+
+#promo-video{
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+
 .upcoming-events {
   font-family: "Montserrat";
   /* background: rgba(2, 54, 97, 0.919); */
@@ -427,10 +448,10 @@ header {
     rgb(248, 248, 245) 0%,
     #ffffff 20%,
     #ffffff 90%,
-    rgb(23, 71, 110) 92%,
-    rgb(23, 71, 110) 93%,
-    rgb(23, 71, 110) 100%,
-    rgb(23, 71, 110) 100%
+    rgb(0, 0, 0) 92%,
+    rgb(0, 0, 0) 93%,
+    rgb(0, 0, 0) 100%,
+    rgb(0, 0, 0) 100%
   );
 }
 
@@ -446,9 +467,10 @@ header {
 .aac-partners-images img {
   max-width: 200px; /* max size for desktop */
   width: 100%; /* allow shrinking for smaller screens */
-  height: 40px;
+  height: 90px;
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.237));
   transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 50px;
 }
 
 .aac-partners-images img:hover {
@@ -466,7 +488,7 @@ header {
 }
 
 footer {
-  background: rgba(23, 71, 110, 1);
+  background: rgb(1, 1, 1);
   color: white;
   font-family: "Montserrat";
   display: flex;
@@ -489,7 +511,6 @@ footer {
 .footer-logo{
   display: flex;
   align-items: center;
-  
 }
 
 .footer-logo p{
@@ -499,7 +520,8 @@ footer {
 }
 
 .footer-logo img {
-  height: 70px;
+  padding-right: 10px;
+  height: 100px;
   border-radius: 40px;
   margin-bottom: 15px;
 }
@@ -607,13 +629,26 @@ footer {
 
 .aac-history h1{
   text-align: center;
-  padding: 40px 0 0;
+  padding: 140px 0 0 0;
 }
 
 .aac-about{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 500px;
+}
+
+.aac-about-left{
+  padding-top: 50px;
+}
+
+#below{
+  padding-top: 10px;
+}
+
+.aac-about p{
+  line-height: 30px;
 }
 
 .aac-about-right,
